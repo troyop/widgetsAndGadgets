@@ -1,3 +1,10 @@
+/* 
+    * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
+    * Date: 01/18/2019
+    * Description: Stylesheet contains that the import information for all the Google Fonts to add 
+    * fonts to the web pages.
+*/
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');

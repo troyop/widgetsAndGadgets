@@ -1,8 +1,123 @@
-body {
+/* 
+    * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
+    * Creation Date: 01/16/2019
+    * Date: 01/18/2019; 01/21/2019; 01/22/2019
+    * Description: Stylesheet contains that the import information for all the Google Fonts to add 
+    * fonts to the web pages.
+*/
+
+/*  */
+body 
+{
+  /* background-image: url('/images/foodm_05_edited.jpg');
+  background-position: center;
+  filter: blur(8px); */
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+/*  */
+.image
+{
+  background-image: url('/images/foodm_05_edited.jpg');
+  background-position: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*  */
+.bg-image
+{
+  background-image: url('/images/283331-P6EPD6-923.jpg');
+  background-size: 100%;
+  background-position: right; 
+  background-repeat: no-repeat; 
+  height: 500px;
+  width: 55%;
+  border-radius: 50%;
+  margin-left: left; 
+  /* 24%; */
+  margin-right: right;
+
+  /* 50%; */
+  /* justify-content: center; */
+  /* display: flex; */
+}
+
+/*  */
 a {
-  color: #00B7FF;
+  color: black;
+}
+
+/* styles for the product page */
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+/*  */
+.footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+   
+}
+
+/*  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.smallGad
+{
+  width: 175px;
+  height: 175px;
+}
+
+.medGad
+{
+  width: 175px;
+  height: 175px;
+}
+
+.lrgGad
+{
+  width: 175px;
+  height: 175px;
 }

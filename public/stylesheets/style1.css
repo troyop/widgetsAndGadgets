@@ -1,0 +1,62 @@
+/* 
+    * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
+    * Date: 01/18/2019
+    * Description: Stylesheet contains that the import information for all the Google Fonts to add 
+    * fonts to the web pages.
+*/
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.bg-image
+/* :hover:active */
+{
+  background-image: url('/images/283331-P6EPD6-923.jpg');
+  background-size: 100%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  /* background-attachment: local; */
+  height: 500px;
+  width: 55%;
+  border-radius: 50%;
+  margin-left: 23%;
+  margin-right: 50%;
+  /* text-align: center; */
+  /* margin-left: 75%;    */
+  
+  /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) */
+  /* box-shadow: 0 9px #999; */
+  /* justify-content: center; */
+}
+
+/*.error
+{
+  src: url("/images/283331-P6EPD6-923.jpg");
+  width: "350";
+  height: "350"; 
+  margin: "center" 
+  /* class:".img-rounded";
+)*/
+
+a {
+  color: black;
+}
+
+
+.footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: red; */
+  text-align: center;
+
+  /* flex: 1 0 auto;
+    flex-shrink: 0;
+    position: center;
+    display: block; */
+   
+}
