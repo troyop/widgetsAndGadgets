@@ -1,0 +1,438 @@
+<!-- 
+* Authors: Kiowa Alumno (One of the Original Founders), Troy Peterson, Jo Lee White				* indexTest.html
+* Creation Date: 01/30/3019						                                                * widgetsAndGadgets	
+* Updated: 02/01/2019; 02/02/2019 - 02/22/2019
+* Description: Main page of the multi-page website for WAGs Corporation
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Welcome to Wag's Gadgets : Where We Create Carefully Crafted Gadgets for the Savvy Shopper </title>
+
+    <!-- Imports the stylesheets in the application folder -->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+
+    <!-- a stylesheet that contains the import information for all the Google Fonts to add fonts to the web pages -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- will load the  -->
+
+<body class="bg-image" onload="generateRandomNumber()" style="font-family:Nobile">
+
+    <b>
+        <!-- <div class="main"> -->
+
+        <div>
+            <!-- Page Navigation Bar -->
+            <!-- This lets the browser know that the link is within the page -->
+            <!-- The “#” is still telling the browser to load the same page, except when you include text 
+        after the # sign, it’s further telling the browser to look for link of that name on the same 
+        page, and scroll to that location). -->
+
+            <div class="navbar">
+                <ul id="ulBar">
+                    <li><a class="active" href="#index" id="home" class="smooth">Home</a></li>
+                    <li><a href="#gadgets">Products / Shopping Cart</a></li>
+                    <li><a href="#aboutWags">Fun Facts About Wags</a></li>
+                    <li><a href="#aboutTCOB">Partner Spotlight</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+
+                </ul>
+            </div>
+
+            <br />
+            <br />
+
+            <!-- Trying out dividing the other pages into sections -->
+            <!-- Section 1: Index -->
+            <section>
+                <div id="page1">
+                    <a id="index" class="smooth"></a>
+                    <h1 class="title"> Welcome to Wag's Gadgets -- Home of the Original Wag's Gadget! </h1>
+                    <!-- <p class="about"> -->
+                        
+                        <p id="border"> <span style="font-family:Special Elite; font-size:20px; margin-left: center; margin-right: auto;">
+                                Welcome to Wag Corporation, your number one source for all things gadget related. Where we are always working
+                                toward our motto, <i>"where we create carefully crafted gadgets for the savvy shopper."</i> We're dedicated 
+                                to giving you the very best gadgets and shopping experience with a focus on dependability, customer service,
+                                and uniqueness.
+
+                                <br> <br>
+
+                                We serve customers from all over the world and are thrilled to be a part of the exciting and ever-evolving online retail
+                                industry. We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions 
+                                or comments, please don't hesitate to contact us.
+
+                                <br> <br>
+
+                                Sincerely, </span>
+
+                            <br>
+
+                            <span style="font-family:Homemade Apple; font-size: 30px;"> Avery Grant </span>
+                            <span style="font-family:Special Elite; font-size:20px;"> and </span>
+                            <span style="font-family:Kristi; font-size: 45px;"> Lennox Stewart</span> <br>
+                            <span style="font-family:Special Elite; font-size:20px;"> Wag Corporation Founders </span></p>
+
+                        <br /> <br />
+                        <a href="#index"> Back to the Top </a> <br />
+
+                        <hr />
+                        <br />
+                        <br />
+
+                </div>
+            </section>
+
+            <section>
+                <div id="page2">
+                    <a id="gadgets" class="smooth"></a>
+                    <h1 style="text-align: center" id="title"> <u>Products and Prices: </u></h1>
+                    <table style="width:100%">
+                        <tr class='themed-grid-col'>
+                            <th class="cardProduct"> <br />
+                                <img class="gadget" src="/images/6326_edited.jpg"> <br />
+                                Small Gadget - <br />
+                                One Small Gadget consists of one small widget and one medium widget.
+                                <br /> </span>
+                                <p class="price">$10.00</p>
+                                <p> <a href="/cart3"> <button>Purchase/Reserve</button> </a> </p> <br />
+                            </th>
+
+                            <th class="cardProduct"> <br />
+                                <img class="gadget" src="/images/6327_copy.jpg"> <br />
+                                Medium Gadget - <br />
+                                One Medium Gadget consists of two small widgets, two medium widgets and one large
+                                widget.</span>
+                                <p class="price">$20.00</p>
+                                <p> <a href="/cart3"> <button>Purchase/Reserve</button> </a> </p> <br />
+                            </th>
+
+                            <th class="cardProduct"> <br />
+                                <img class="gadget" src="/images/6328 copy.jpg"> <br />
+                                Large Gadget - <br />
+                                One Large Gadget consists of three small widgets, five medium widgets and three large
+                                widgets.</span>
+                                <p class="price">$30.00</p>
+                                <p> <a href="/cart3"> <button>Purchase/Reserve</button> </a> </p> <br />
+                            </th>
+                        </tr>
+                    </table>
+
+                    <br />
+                    <br />
+
+                    <a href="#index"> Back to the Top </a> <br />
+
+                    <hr />
+                </div>
+            </section>
+
+
+            <section>
+                <div id="page3">
+                    <a id="aboutWags" class="smooth"></a>
+                    <h1 style="text-align: center" id="title"> <u>Fun Facts About Wags Corporation</u></h1>
+                    <div class="row">
+                        <!-- <div class="column" id="cardCol"> -->
+                            <!-- <img src="/images/foodm_05_edited.jpg" style="width:65%; height:25px;" /> -->
+                        <!-- </div> -->
+                        
+                        <img src="/images/miami cityscape.jpg" style="display: block; margin-left: auto; margin-right: auto; height: 35px; width: 350px" />
+
+                        <div>                         
+                           <ul id="ulReg"> 
+                               <li> Founded in 1980 by Avery Grant and Lennox Stewart. </li>
+                               <li> Known for providing the best gadgets and gadget replacement parts at prices for every budget. </li>
+                               <li> Quit their day jobs as factory assembly line workers to turn hard work and inspiration into to a booming online
+                                    empire. </li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                    <br>
+                    <br />
+
+                    <a href="#index"> Back to the Top </a> <br />
+
+                    <hr />
+                    <hr>
+                    <br>
+            </section>
+
+            <section>
+                <div id="page4">
+                    <a id="aboutTCOB" class="smooth"></a>
+                    <h1 style="text-align: center" id="title"> <u>Partner Spotlight: Taking Care of Business "T.C.O.B." Incorporated</u></h1>
+                    <div class="row">
+                        <!-- <div class="column" id="cardCol"> -->
+                            <!-- Taking Care of Business ("T.C.O.B.") Incorporated - Our Story <br /> -->
+                            Founded in January 2019 by 3 like-minded individuals, Kiowa Alumno, Jo Lee White and Troy Peterson, got together 
+                            and decided to create a business that displays their unique vision, experience and knowledge of web development 
+                            thus Taking Care of Business Incorporated, T.C.O.B. was born. 
+
+                            The decision where to begin their business venture was an easy one. T.C.O.B. is headquartered in the bustling downtown 
+                            Kansas City, Missouri metropolitan area. T.C.O.B. Inc is a friendly, client oriented business that takes pride in 
+                            helping its clients make their online dreams a successful and profitable reality. T.C.O.B. is an Employee owned and
+                            operated business. Please see below to gain more insight about the T.C.O.B. family, interesting company statistics
+                            or to contact the owners individually.
+
+                            <br> 
+                            <br>
+                    </div>
+
+                    <table style="margin-left: auto; margin-right: auto">
+                        <tr style="width:100% text-align:center">The "T.C.O.B." Incorporated Founding Employee Family </tr>
+                        <tr>
+                            <td>
+                                <!--  -->
+                                <div class="cardProfile">
+                                    <img src="/images/womanSilhouette.jpg" id="photoID">
+                                    <p id="title">J White</p>
+                                    <p class="title">J. White, Project Lead</p>
+                                    <a href="https://www.linkedin.com/in/jo-lee-white-5749ab176/"><i class="fa fa-linkedin"></i></a>
+                                    <p> <a href="mailto:msjlwhite@gmail.com"> <button> Contact </button> </a> </p>
+                                    <div class="overlay">
+                                        <div class="text"> Affable, Amicable and Amazinng <br>
+                                            Jo Lee is an IT Specialist with 6 years of experience in software testing, data creation, and customer service. Expert and highly familiar with a wide variety of testing methods, programming languages, and database software.
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cardProfile">
+                                    <img src="/images/manSilhouette.jpg" id="photoID">
+                                    <p id="title">T Peterson</p>
+                                    <p class="title">Coding Specialist</p>
+                                    <a href="https://www.linkedin.com/in/troy-peterson-1383503/"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/troy.peterson.1423An"><i class="fa fa-facebook"></i></a>
+                                    <p> <a href="mailto:troyop@gmail.com"> <button>Contact</button> </a> </p>
+                                    <div class="overlay">
+                                        <div class="text"> 
+                                        Talented, Thoughtful and Tenacious <br>
+                                        Troy has over 20 years of experience and knowledge of multiple programming languages, software environments and software tools. Influential Strategist who contributes solutions-centric critical thinking for insightful, change-oriented results. Who has  cutting-edge technological skills and up-to-date industry trends awareness, as well as rising above IT / operational challenges to quickly adapt to evolving scenarios and attain winning project outcomes.
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cardProfile">
+                                    <img src="/images/woman silhouette 2.jpg" id="photoID">
+                                    <p id="title">K Alumno</p>
+                                    <p class="title">Creative Director</p>
+                                    <a href="https://www.linkedin.com/in/kiowaalumno/"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/kiowa.pendleton"><i class="fa fa-facebook"></i></a>
+                                    <p> <a href="mailto:kiowaalumno@gmail.com"> <button>Contact</button> </a> </p>
+                                    <div class="overlay">
+                                        <div class="text"> Cool, Calm, Collected <br>
+                                        Kiowa is a Junior JavaScript Developer and Web Designer with more than 1 year of experience. She has a strong technical skill set in HTML5, CSS3, JavaScript, ReactJS and Node.js.
+                                         </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <br>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="cardCol">
+                                    <h4> Projects Completed:</h4>
+                                    <span id="stat"> </span>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="cardCol">
+                                    <h4>Cups of Some Beverage Consumed</h4>
+                                    <span id="stat2"> </span>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="cardCol">
+                                    <h4>Happy Clients</h4>
+                                    <span id="stat3"> </span>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="cardCol">
+                                    <h4>Lives Changed</h4>
+                                    <span id="stat4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- End stat section -->
+
+            <hr />
+        </div>
+
+        <br />
+        <br />
+
+        <a href="#index"> Back to the Top </a> <br />
+        <hr />
+        </section>
+
+        <section>
+            <div id="page4">
+                <a id="contactUs" class="smooth"></a>
+                <!-- <h1 id="title">  </ff> -->
+                <h2 id="title" >So You Have Questions . . Well, We Have Answers! So Contact Us . . . Besides, it's 100% FREE!! <br>
+                    Whether Rain or Shine, if you have a question or problem, please don't hesitate to drop us a line. </h2>
+                <div class="containerB">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="Lname" name="lastname" placeholder="Your last name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Country</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                    <option value="europe">Europe</option>
+                                    <option value="asia">Asia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Submit" a href="mailto:msjlwhite@ygmail.com">
+                        </div>
+                    </form>
+                </div>
+
+                <br />
+
+                <a href="#index"> Back to the Top </a> <br />
+
+                <br />
+                <hr />
+
+            </div>
+
+            <!-- <p id="footer"> Taking Care of Business Incorporated | <a href="mailto:msjlwhite@ygmail.com">
+                Questions@TCOB.com </a> | <a href="https://goo.gl/maps/BfxsHN6Gn4v"> 1740 The Paseo, Kansas
+                City, MO 64108 </a> </p> -->
+
+        </section>
+
+        <!-- <p id="footer"> Taking Care of Business Incorporated | <a href="mailto:msjlwhite@ygmail.com">
+                    Questions@TCOB.com </a> | <a href="https://goo.gl/maps/BfxsHN6Gn4v"> 1740 The Paseo, Kansas
+                    City, MO 64108 </a> </p>
+
+        <br />
+
+        <div id="footer"> <p>Footer</p> </div> -->
+
+    </body> <!-- end of body -->
+
+    <!--script test -->
+    <!-- testing to see if this script will actually create a count up counter -->
+
+    <script>
+        var total; // hold random number amount
+        var counts = []; // array to hold each stat amount
+        var stat1;
+        var stat2;
+        var stat3;
+        var stat4;
+
+        function generateRandomNumber() {
+
+            for (i = 0; i < 4; i++) {
+                total = Math.round(Math.random() * (1000 - 0) + 0); //(1000-0) + 0);
+                counts.push(total);
+            }
+
+            // seperated the array values into individual variables
+            stat1 = counts.pop();
+            stat2 = counts.pop();
+            stat3 = counts.pop();
+            stat4 = counts.pop();
+
+            // animates the stat section counts/amounts
+            var i = 0;
+            var inv = setInterval(function () {
+                if (i < stat1) {
+                    document.getElementById("stat").innerHTML = i++;
+                } else {
+                    clearInterval(inv);
+                }
+
+            }, 3000 / 300);
+
+
+            var i = 0;
+            var inv = setInterval(function () {
+                if (i < stat2) {
+                    document.getElementById("stat2").innerHTML = i++;
+                } else {
+                    clearInterval(inv);
+                }
+
+            }, 3000 / 300);
+
+
+            var i = 0;
+            var inv = setInterval(function () {
+                if (i < stat3) {
+                    document.getElementById("stat3").innerHTML = i++;
+                } else {
+                    clearInterval(inv);
+                }
+
+            }, 3000 / 300);
+
+            var i = 0;
+            var inv = setInterval(function () {
+                if (i < stat4) {
+                    document.getElementById("stat4").innerHTML = i++;
+                } else {
+                    clearInterval(inv);
+                }
+
+            }, 3000 / 300);
+
+        }
+    </script> <!-- end of script -->
+
+<!-- </body> end of body -->
+
+</html> <!-- end of HTML page -->

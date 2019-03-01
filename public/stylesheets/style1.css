@@ -1,0 +1,438 @@
+/* 
+    * Author(s): Kiowa Alumno, Troy Peterson, Jo Lee White
+    * Creation Date: 01/16/2019
+    * Date: 01/18/2019; 01/21/2019; 01/22/2019; 01/23/2019; 01/27/2019; 01/31/2019; 02/01/2019
+    * Description: Stylesheet contains that the import information for all the Google Fonts to add 
+    * fonts to the web pages.
+*/
+
+/* controls the scrolling animation for the page */
+html
+{
+  scroll-behavior: smooth;
+}
+/* ====================END OF HTML SETTINGS========================== */
+
+/* adds a Drop Letter to the first letter 
+of each of the About Us Page paragraphs. */
+
+
+
+.about::first-letter
+ {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+  font-family: "Diplomata";
+}
+
+.title
+{ 
+  font-family:"Scope One";
+
+}
+
+/* ====================END OF BODY SETTINGS========================== */
+
+.bg-image
+{
+  background-image: url("/images/5816.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 8px; */
+}
+/* ====================END OF BACKGROUND IMAGE SETTINGS========================== */
+
+
+/*  Error Message Screen/Page Properties */
+.err-image 
+{
+  background-image: url('/images/283331-P6EPD6-923.jpg');
+  /* height: 465px;
+  width: 333px; */
+
+  width: 100%;
+  height: 100%;
+  size: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  border-radius: 50%; */
+}
+/* ====================END OF 404 MESSAGE SETTINGS========================== */
+
+/*  Internal and External Link Set Up */a 
+{
+  color: gray; 
+  /* black; */
+}
+
+/* ====================END OF HTML SETTINGS========================== */
+
+/* NavBar styles -- Horizontal, Fixed and Sticky (stationary)*/
+.navbar 
+{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* position: sticky; */
+}
+
+.navbar a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover 
+{
+  background: #ddd;
+  color: black;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Page content */
+#content {
+  padding: 16px;
+}
+
+
+/* Navbar TEST */
+
+
+
+/* LIST THAT CONTAINS LINKS and Settings for the Navigation Bar */
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active 
+{
+  background-color: grey;
+}
+
+/* ====================END OF Navigation Bar SETTINGS========================== */
+
+
+/* styles for the product page */
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+/* Product Section Image settings */
+.gadget 
+{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;  
+}
+
+/* CREATES A PRODUCT INFORMATION CARD */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  max-height: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* ====================END OF PRODUCT PAGE/SECTION SETTINGS========================== */
+b
+/* About Us Page Settings */
+
+.photoID
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* float: left; */
+}
+
+/* Flip image test */
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+
+  perspective: 1000px; 
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  z-index: 500;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* ==============================END OF About US SETTINGS============================= */
+
+/* ContactUs Page CSS */
+* 
+{
+  box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea 
+
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* ====================END OF CONTACT US SETTINGS========================== */
+
+/* Fixed Page Footer Set-up */
+.footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+p.companyInfo
+{
+  color: darkorange;
+  text-align: center;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+/* stats */
+#shiva
+{
+  width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  float:left;
+  margin:5px;
+}
+.count
+{
+  line-height: 100px;
+  color: navy;
+  margin-left:30px;
+  font-size:25px;
+}
+
+#talkbubble {
+   width: 180px;
+   height: 80px;
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+  float:left;
+  margin:20px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
+
+.linker
+{
+  font-size : 20px;
+  font-color: black;
+}
+
+.statID
+{
+  width: 150px;
+  height: 125px;
+  /* opacity: 0.2; */
+  position: relative;
+  /* border-radius: 50%; */
+  /* float: left; */
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

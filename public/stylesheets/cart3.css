@@ -1,0 +1,54 @@
+body{
+    background-image: url('/images/thumbnail.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#frm{
+    text-align: center;
+    padding: 20px;
+    border: 2px solid;
+}
+
+#cart{
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid;
+    background: lightgoldenrodyellow;
+}
+
+#formLayout{
+    font-family: Verdana;
+    font-size: 10pt;
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    border: solid 1px #a1a1a1;
+    padding: 10px;
+    width: 415px;
+    height: 380px;
+}
+
+#formLayout label{
+    color: darkgoldenrod;
+    display: block;
+    /* float: left; */
+    /* text-align: left;  */
+    margin-bottom: 10px;
+}
+
+#formLayout input{
+    display: block;
+    float: left;
+    /* text-align: left;  */
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+th, td, tr{
+    border: 1px solid;
+}

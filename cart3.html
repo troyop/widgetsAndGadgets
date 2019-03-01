@@ -1,0 +1,107 @@
+<!-- 
+* Authors: Kiowa Alumno (One of the Original Founders), Troy Peterson, Jo Lee White				* indexTest.html
+* Creation Date: 01/30/3019						                                                * widgetsAndGadgets	
+* Updated: 02/01/2019; 02/02/2019 - 02/22/2019
+* Description: Shopping Cart and Order Form for WAGs Corporation
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Shopping Cart </title>
+    
+    <!-- Imports the stylesheets in the application folder -->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+
+    <!-- a stylesheet that contains the import information for all the Google Fonts to add fonts to the web pages -->
+    <link rel="stylesheet" href="/stylesheets/fonts.css" />
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="/javascripts/cart3.js"></script>
+    <link href="/stylesheets/cart3.css" rel="stylesheet" />
+</head>
+
+<body class="bg-image" style="font-family:Nobile"></body>
+
+<h2 class="title"> Welcome to Wag's Gadgets -- Home of the Original Wag's Gadget! -- Purchase/Reserve Form</h2>
+
+<div class="navbar">
+    <ul id="ulBar">
+        <li><a class="active" href="/indexTest3" id="home" class="smooth">Go Back to Homepage</a></li>
+        <li><a href="#frm">Shopping Cart</a></li>
+        <li><a href="#cart">Order Form</a></li>
+    </ul>
+</div>
+
+
+<!--Form-->
+
+<div id='frm'>
+<h2 style="text-align: center" id="title"> <u>Please make your selections below and add item(s) to the shopping cart: </u></h2>
+<label style="color:darkgoldenrod;">Product Name</label>
+<select id="pname">
+    <option value='Small Gadget'>Small Gadget ($10)</option>
+    <option value='Medium Gadget'>Medium Gadget ($20)</option>
+    <option value='Large Gadget'>Large Gadget ($30)</option>
+</select><br>
+<label style="color:darkgoldenrod;">Product Style</label>
+<select id="pstyle">
+    <option value='Plain'>Plain</option>
+    <option value='Painted'>Painted</option>
+    <option value='Plated'>Plated</option>
+</select><br>
+<label style="color:darkgoldenrod;">Quantity</label>
+<input id='pqty' type='number'><br>
+<!-- <label>Unit Price</label>
+<input id='price' type='number'><br> -->  
+
+</div>
+
+<div style="width:180px;">
+
+<button onclick='addItem()'>Add Item</button>
+
+</div>
+
+<h2 style="text-align: center" id="title"> <u>Shopping Cart: </u></h2>
+
+<div id='cart'></div><br>
+
+<h2 style="text-align: center" id="title"> <u>Please fill out your payment information below and click 'Submit Order' to complete your order:</u></h2>
+
+<form method="post" name="orderform" action="mailto:me@mydomain.com" enctype="text/plain">
+    <table  style="border: 0">
+    <tr><td>Company Name:</td><td colspan="3"><input type="Text" name="Company" size="35" maxlength="40"></td></tr>
+    <tr><td>Contact Name:</td><td colspan="3">First <input type="Text" name="FirstName" size="15" maxlength="20"> Last 
+    <input type="Text" name="LastName" size="15" maxlength="20"></td></tr>
+    <tr><td>Address</td><td colspan="3"><input type="Text" name="Street" size="20" maxlength="40"></td></tr>
+    <tr><td>City</td><td><input type="Text" name="City" size="20" maxlength="20"></td><td>Province/State:</td>
+    <td><input type="Text" name="Province" size="20" maxlength="40"></td></tr>
+    <tr><td>Country:</td><td><input type="Text" name="Country" size="20" maxlength="20"></td><td>Zipcode:</td>
+    <td><input type="Text" name="Code" size="9" maxlength="10"></td></tr>
+    <tr><td>Phone:</td><td><input type="Text" name="Phone" size="8" maxlength="12"></td><td>Fax:</td><td><input type="Text" name="Fax" size="8" maxlength="12"></td></tr>
+    <tr><td>Email Address:</td><td colspan=3><input type="Text" name="Email" size="30" maxlength="30"></td></tr>
+    <tr><td>Order Summary:</td><td colspan=3><textarea name="" id="cart2" cols="40" rows="15"></textarea></td></tr></td></tr>
+    <!-- <tr><td>Order Summary:</td><td colspan=3><input type="Text" name="cart2" size="30" maxlength="30"></td></tr> -->
+    <tr><td colspan="4" height="3"><hr></td></tr>
+    <tr><td colspan="2" style="align-content: center"><input type="Submit" value="Submit Order"></td><td colspan="2" style="align-content: center"><input type="RESET" value="Reset Order"></td></tr> </table>
+    </form>
+    
+<!-- <div style="width:180px;"> -->
+
+<!-- <button onclick='submitOrder()'>Submit Order</button> -->
+
+<!-- </div> -->
+<br/>
+<br>
+
+<a href="#frm"> Back to top </a>
+
+
+</body>
+</html>
